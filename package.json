@@ -1,42 +1,44 @@
 {
   "name": "vue-webpack-starter",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
-  },
+  "version": "1.0.0",
+  "description": "a starter for vue and webpack",
   "dependencies": {
-    "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "vue": "^2.6.14"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^6.2.2",
-    "vue-template-compiler": "^2.6.11"
+    "@babel/core": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^2.0.2",
+    "css-loader": "^2.1.1",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^7.3.1",
+    "vue-loader": "^15.9.6",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.2"
   },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "babel-eslint"
-    },
-    "rules": {}
+  "scripts": {
+    "serve": "npm run build:dev && ./node_modules/.bin/webpack serve --open",
+    "build:dev": "./node_modules/.bin/webpack --config development.config.js",
+    "build:prod": "./node_modules/.bin/webpack --config production.config.js"
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ]
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/philipschikora/vue-webpack-starter.git"
+  },
+  "keywords": [
+    "Vue",
+    "VueJS",
+    "Starter"
+  ],
+  "author": "Philip Schikora",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/philipschikora/vue-webpack-starter/issues"
+  },
+  "homepage": "https://github.com/philipschikora/vue-webpack-starter#readme"
 }
