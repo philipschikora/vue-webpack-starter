@@ -38,5 +38,8 @@
   "bugs": {
     "url": "https://github.com/philipschikora/vue-webpack-starter/issues"
   },
-  "homepage": "https://github.com/philipschikora/vue-webpack-starter#readme"
+  "homepage": "https://github.com/philipschikora/vue-webpack-starter#readme",
+  "publishConfig": {
+    "philipschikora:registry": "https://npm.pkg.github.com"
+  }
 }
