@@ -1,24 +1,8 @@
 {
-  "name": "vue-webpack-starter",
-  "version": "1.0.0",
+  "name": "@philipschikora/vue-webpack-starter",
+  "version": "0.0.1-alpha.1",
   "description": "a starter for vue and webpack",
-  "dependencies": {
-    "vue": "^2.6.14"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.16.0",
-    "@babel/preset-env": "^7.16.4",
-    "babel-loader": "^8.2.3",
-    "css-loader": "^6.5.1",
-    "node-sass": "^6.0.1",
-    "sass-loader": "^12.3.0",
-    "vue-loader": "^15.9.8",
-    "vue-style-loader": "^4.1.3",
-    "vue-template-compiler": "^2.6.14",
-    "webpack": "^5.64.4",
-    "webpack-cli": "^4.9.1",
-    "webpack-dev-server": "^3.11.3"
-  },
+  "main": "dist/app.bundles.js",
   "scripts": {
     "serve": "./node_modules/.bin/webpack serve --config development.config.js --open",
     "build:dev": "./node_modules/.bin/webpack --config development.config.js",
@@ -40,6 +24,23 @@
   },
   "homepage": "https://github.com/philipschikora/vue-webpack-starter#readme",
   "publishConfig": {
-    "philipschikora:registry": "https://npm.pkg.github.com"
+    "@philipschikora:registry": "https://npm.pkg.github.com"
+  },
+  "dependencies": {
+    "vue": "^2.6.14"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.5.1",
+    "node-sass": "^6.0.1",
+    "sass-loader": "^12.3.0",
+    "vue-loader": "^15.9.8",
+    "vue-style-loader": "^4.1.3",
+    "vue-template-compiler": "^2.6.14",
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^3.11.3"
   }
 }
